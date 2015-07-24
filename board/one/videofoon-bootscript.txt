@@ -30,6 +30,9 @@ else
 echo "!!!! Error loading ${bootdir}$dtbname";
 exit;
 fi
+
+echo "test";
+
 # ------------------- HDMI detection
 i2c dev 1 ;
 if i2c probe 0x50 ; then
