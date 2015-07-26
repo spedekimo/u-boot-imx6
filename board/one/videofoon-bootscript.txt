@@ -41,7 +41,8 @@ fi
 echo "configuring LVDS....";
 setenv have_lvds 1
 screenres=800,480
-setenv bootargs $bootargs video=mxcfb0:dev=ldb,800x480M@60,if=RGB666
+setenv bootargs $bootargs video=mxcfb0:dev=ldb,800x480M@60,if=RGB666 ldb_di_clk_sel=pll5_video_div  
+#setenv bootargs $bootargs video=mxcfb0:dev=ldb,800x480M@60,if=RGB666
 setenv fbcon "fbcon=10M";
 setenv nextcon 1;
 
